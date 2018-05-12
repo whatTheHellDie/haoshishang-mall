@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+		<script src="lib/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap wrap4">
+		<div class="top-bar top-bar2 top-bar3">
+			<svg class="icon icon-back" aria-hidden="true" onclick="window.history.back(1)">
+				  <use xlink:href="#icon-left"></use>
+				</svg>
+		<div id="search-box">
+				<svg class="icon icon-search" aria-hidden="true">
+				  <use xlink:href="#icon-search"></use>
+				</svg>
+				<input type="text" class="input" placeholder="请输入关键字进行搜索" /><div class="btn-search btn-search2">搜索</div>
+				<svg class="icon icon-clear" aria-hidden="true" onclick="window.history.back(1)">
+				  <use xlink:href="#icon-clear"></use>
+				</svg>
+		</div>
+		
+		</div>
+		<div class="item_list item_list7">
+				<ul class="clearfix">
+					<li>
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="price clearfix" >
+							<span><span>￥</span>203<span class="kg">/kg</span></span>
+							<div class="shopcart1">
+					<svg class="icon" aria-hidden="true">
+				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="price clearfix" >
+							<span><span>￥</span>203<span class="kg">/kg</span></span>
+							<div class="shopcart1">
+					<svg class="icon" aria-hidden="true">
+				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="price clearfix" >
+							<span><span>￥</span>203<span class="kg">/kg</span></span>
+							<div class="shopcart1">
+					<svg class="icon" aria-hidden="true">
+				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="price clearfix" >
+							<span><span>￥</span>203<span class="kg">/kg</span></span>
+							<div class="shopcart1">
+					<svg class="icon" aria-hidden="true">
+				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</div>
+						</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		
+				</div>
+				<!--footer-->
+<div class="foot">
+		<ul class="clearfix">
+			<li>
+				<a href="index.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-home"></use>
+				</svg>
+				首页
+				</a>
+			</li>
+			<li>
+				<a href="list.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-fenlei"></use>
+				</svg>
+				分类
+				</a>
+			</li>
+			<li>
+				<a href="shop-cart.html">
+					<div class="number">0</div>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart"></use>
+				</svg>
+				购物车
+				</a>
+			</li>
+			<li>
+				<a href="person-center.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-person"></use>
+				</svg>
+				个人中心
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var $title=$("title").text();
+		switch($title){
+			case "首页":
+			changeIndex(0,"#icon-homea");
+			break;
+			case "商品详情":
+			changeIndex(1,"#icon-fenleia");
+			break;
+			case "购物车":
+			changeIndex(2,"#icon-shopcarta");
+			break;
+			case "个人中心":
+			changeIndex(3,"#icon-persona");
+			break;
+		}
+		function changeIndex(footIndex,changeAttr){
+			$(".foot li").eq(footIndex).addClass("active").siblings().removeClass("active")
+			$(".foot li").eq(footIndex).find("use").attr("xlink:href",changeAttr);
+			
+		}
+	</script>
+<!--footerend-->
+			  	<script src="lib/index.js" type="text/javascript" ></script>
+	</body>
+	
+</html>

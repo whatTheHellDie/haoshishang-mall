@@ -1,0 +1,46 @@
+/*!
+ * default v0.0.1: A lightweight front-end boilerplate
+ * (c) 2017 
+ * MIT License
+ * https://github.com/whatTheHellDie/myDefault
+ */
+
+/* line 1, E:/jingli/haoshishang/src/sass/login2.scss */
+.login-wrap3 .register-title {
+  top: 17px;
+  left: .2rem;
+  width: 1.44rem;
+  text-align: right;
+}
+
+/* line 7, E:/jingli/haoshishang/src/sass/login2.scss */
+.login-wrap3 input {
+  width: 4.2rem;
+  margin-left: 1.88rem;
+}
+
+/* line 11, E:/jingli/haoshishang/src/sass/login2.scss */
+.login-wrap3 .get {
+  right: .4rem;
+}
+
+/* line 14, E:/jingli/haoshishang/src/sass/login2.scss */
+.send-info {
+  font-size: .24rem;
+  margin-left: .4rem;
+  color: #333;
+  margin-bottom: -.3rem;
+}
+
+/* line 20, E:/jingli/haoshishang/src/sass/login2.scss */
+.login-wrap4 input {
+  width: 5.66rem;
+  margin-left: 0.36rem;
+  padding-left: 0.1rem;
+}
+
+/* line 25, E:/jingli/haoshishang/src/sass/login2.scss */
+.indent0 {
+  text-indent: 0;
+  letter-spacing: .1rem;
+}

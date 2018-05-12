@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/login.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+	</head>
+	<body>
+		<div class="wrap wrap3">
+			<img src="img/logo.png" class="logo"/>
+			<div class="login-wrap">
+				<svg class="icon icon-user" aria-hidden="true">
+				  <use xlink:href="#icon-user"></use>
+				</svg>
+				<input type="text"  placeholder="请输入您的登录帐号"/>
+			</div>
+			<div class="login-wrap">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-password"></use>
+				</svg>
+				<input type="password"  placeholder="密码"/>
+			</div>
+			<div class="tip">验证码错误</div>
+			<div class="auto-login"><div class="choose-item" onclick="checked(this)"></div>自动登录</div>
+			<div class="btn-login">登录</div>
+			
+			<div class="tar">
+				<a href="register.html" class="btn-register">注册</a>
+				<a href="#">忘记密码?</a>
+			</div>
+			
+			<img src="img/login-bottom.png" class="login-bottom"/>
+		</div>
+		<script type="text/javascript">
+			function checked(obj){
+	!$(obj).hasClass("checked")?
+	$(obj).addClass("checked")
+	:$(obj).removeClass("checked");
+}
+		</script>
+		
+				</div>
+	</body>
+	
+</html>

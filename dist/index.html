@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+		<script src="lib/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap wrap1">
+		<header>
+			<div id="index_head" class="clearfix">
+				<span>
+				<svg class="icon icon-item" aria-hidden="true">
+				  <use xlink:href="#icon-item"></use>
+				</svg>豪食尚</span>
+				<span class="location" onclick="window.location.href='choose-city.html'">
+					<svg class="icon icon-location" aria-hidden="true">
+				  <use xlink:href="#icon-location"></use>
+				</svg>南宁
+				</span>
+				<div class="f-r">
+					<svg class="icon icon-serve" aria-hidden="true">
+				  <use xlink:href="#icon-serve"></use>
+				</svg>客服
+				</div>
+				
+		</div>
+		</header>
+		
+		<div id="search-box">
+				<svg class="icon icon-search" aria-hidden="true">
+				  <use xlink:href="#icon-search"></use>
+				</svg>
+				<input type="text" class="input" placeholder="请输入关键字进行搜索" />
+				<div class="btn-search"  onclick="window.location.href='search.html'">搜索</div>
+		</div>
+		
+			<!--轮播图开始--> 
+		  <div class="swiper-container swiper-containerx">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/banner.png"/></div>
+        <div class="swiper-slide"><img src="img/b1.png"/></div>
+        <div class="swiper-slide"><img src="img/b2.png"/></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+		<!--轮播图结束-->
+			<div class="news_center">
+				<div class="news_center_title">
+						公告
+					<svg class="icon icon-laba" aria-hidden="true">
+				  <use xlink:href="#icon-laba"></use>
+				</svg>
+				<ul class="news_content">
+					<li class="news_content_li"><a href="news-list.html">化妆品店韩国原装进口化妆品店韩国国国国进口口妆国11韩国国国国进口口妆品店韩国国国国11</a></li>
+					<li class="news_content_li"><a href="news-list.html">1妆品店韩国原装进口化妆品店韩国国国国进口口妆国11韩国国国国进口口妆品店韩国国国国11</a></li>
+					<li class="news_content_li"><a href="news-list.html">2妆品店韩国原装进口化妆品店韩国国国国进口口妆国11韩国国国国进口口妆品店韩国国国国11</a></li>
+					<li class="news_content_li"><a href="news-list.html">3妆品店韩国原装进口化妆品店韩国国国国进口口妆国11韩国国国国进口口妆品店韩国国国国11</a></li>
+					<li class="news_content_li"><a href="news-list.html">4妆品店韩国原装进口化妆品店韩国国国国进口口妆国11韩国国国国进口口妆品店韩国国国国11</a></li>
+				</ul>
+				</div>
+				
+			</div>
+			<div class="my_list">
+				<ul class="clearfix">
+					<li>
+						<a href="list.html">
+						<img src="img/i1.png" alt="">
+						营养早餐
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i2.png" alt="">
+						家常菜
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i3.png" alt="">
+						养生炖汤
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i4.png" alt="">
+						肉类
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i5.png" alt="">
+						果蔬配菜
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i6.png" alt="">
+						海鲜
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i7.png" alt="">
+						特产
+						</a>
+					</li>
+					<li>
+						<a href="list.html">
+						<img src="img/i8.png" alt="">
+						水果
+						</a>
+					</li>
+				</ul>
+			</div>
+		<!--特价列表-->		
+		<div class="item_list">
+				<p>每日特价<a href="#">更多>></a></p>
+				<ul class="clearfix">
+					<li>
+						<a href="detail.html">
+						<div class="price"><svg class="icon" aria-hidden="true" onclick="like(this)">
+				  <use xlink:href="#icon-like-g"></use>
+				</svg><span class="f-r"><span>￥</span>203<span class="kg">/kg</span></span></div>
+						<img src="img/b2.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="btn-buy btn">立即购买</div>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+						<div class="price"><svg class="icon" aria-hidden="true" onclick="like(this)">
+				  <use xlink:href="#icon-like-g"></use>
+				</svg><span class="f-r"><span>￥</span>203<span class="kg">/kg</span></span></div>
+						<img src="img/b1.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="btn-buy btn">立即购买</div>
+						<img src="img/hongbao.png" class="hongbao-add" style="top: .61rem;left: .36rem;"/>
+						</a>
+						
+					</li>
+					<li>
+						<a href="detail.html">
+						<div class="price"><svg class="icon" aria-hidden="true" onclick="like(this)">
+				  <use xlink:href="#icon-like-g"></use>
+				</svg><span class="f-r"><span>￥</span>203<span class="kg">/kg</span></span></div>
+						<img src="img/b1.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<div class="btn-buy btn">立即购买</div>
+						<img src="img/hongbao.png" class="hongbao-add" style="top: .61rem;left: .36rem;"/>
+						</a>
+					</li>
+					<li>
+						<a href="detail.html">
+						<div class="price"><svg class="icon" aria-hidden="true" onclick="like(this)">
+				  <use xlink:href="#icon-like-g"></use>
+				</svg><span class="f-r"><span>￥</span>203<span class="kg">/kg</span></span></div>
+						<img src="img/b1.png" class="product" alt="">
+						<div class="li_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</div>
+						<a href="shop"><div class="btn-buy btn active">立即购买</div></a>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="item_list item_list2 item_listx">
+				<p>每日精选<a href="#">更多>></a></p>
+				<ul class="clearfix">
+					<li class="clearfix">
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="tag-list"><div class="tag">新品</div><div class="tag tag1">热卖</div></div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+						</div>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<a onclick="">
+				<div class="shopcart1">
+					<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</a>
+				</div>
+						</div>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="detail.html">
+						<img src="img/b2.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="tag-list"><div class="tag">新品</div><div class="tag tag2">售罄</div></div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+						</div>
+						<div class="buy-wrap">
+							<div class="price  clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							
+							<a>
+				<div class="shopcart1 shopcart2">
+					<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart1"></use>
+				</svg>
+				</a>
+				</div>
+						</div>
+						<img src="img/hongbao.png" class="hongbao-add" style="top: .61rem;left: .4rem;    transform: scale(.8);"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+				</div>
+				<!--footer-->
+<div class="foot">
+		<ul class="clearfix">
+			<li>
+				<a href="index.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-home"></use>
+				</svg>
+				首页
+				</a>
+			</li>
+			<li>
+				<a href="list.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-fenlei"></use>
+				</svg>
+				分类
+				</a>
+			</li>
+			<li>
+				<a href="shop-cart.html">
+					<div class="number">0</div>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart"></use>
+				</svg>
+				购物车
+				</a>
+			</li>
+			<li>
+				<a href="person-center.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-person"></use>
+				</svg>
+				个人中心
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var $title=$("title").text();
+		switch($title){
+			case "首页":
+			changeIndex(0,"#icon-homea");
+			break;
+			case "商品详情":
+			changeIndex(1,"#icon-fenleia");
+			break;
+			case "购物车":
+			changeIndex(2,"#icon-shopcarta");
+			break;
+			case "个人中心":
+			changeIndex(3,"#icon-persona");
+			break;
+		}
+		function changeIndex(footIndex,changeAttr){
+			$(".foot li").eq(footIndex).addClass("active").siblings().removeClass("active")
+			$(".foot li").eq(footIndex).find("use").attr("xlink:href",changeAttr);
+			
+		}
+	</script>
+<!--footerend-->
+			  	<script src="lib/index.js" type="text/javascript" ></script>
+	</body>
+	
+</html>
+<script type="text/javascript">
+//		layer.open({
+//  content: 'hello layer'
+//  ,skin: 'msg'
+//  ,time: 2 //2秒后自动关闭
+//  ,end: function(elem){
+//alert(1)
+//}    
+//});d
+				</script>

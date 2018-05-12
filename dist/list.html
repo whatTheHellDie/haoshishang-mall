@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+	</head>
+	<body>
+		<div class="wrap wrap1">
+			<div class="left-list">
+				<ul>
+					<li class="active"><a href="javascript:;">营养早餐</a></li>
+					<li><a href="javascript:;">家常菜</a></li>
+					<li><a href="javascript:;">养生炖汤</a></li>
+					<li><a href="javascript:;">肉类</a></li>
+					<li><a href="javascript:;">果蔬配菜</a></li>
+					<li><a href="javascript:;">海鲜</a></li>
+				</ul>
+			</div>
+			<div class="item_list item_list2 item_list3 item_listx">
+				<ul class="clearfix">
+					<li class="clearfix">
+						<a href="detail.html">
+						<img src="img/b1.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="tag-list"><div class="tag">新品</div><div class="tag tag1">热卖</div></div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+						</div>
+						</a>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<div class="add-cart">
+							<div class="add reduce" onclick="reduceNumber(this)">-</div>
+							<input type="text" class="number"  value="0" />
+							<div class="add add1" onclick="addNumber(this)">+</div>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<a href="detail.html">
+							<img src="img/hongbao.png" class="hongbao-add" style="top: .12rem;left: .16rem;    transform: scale(.8);"/>
+						<img src="img/b1.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="tag-list"><div class="tag">新品</div><div class="tag tag1">热卖</div></div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+						</div>
+						</a>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<div class="guige-choose" onclick="showChoosGuige()">
+								选规格
+							</div>
+						</div>
+					</li>
+					<div><img src="img/noData.png" class="noData"/></div>
+				</ul>
+			</div>
+				</div>
+				<!--footer-->
+<div class="foot">
+		<ul class="clearfix">
+			<li>
+				<a href="index.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-home"></use>
+				</svg>
+				首页
+				</a>
+			</li>
+			<li>
+				<a href="list.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-fenlei"></use>
+				</svg>
+				分类
+				</a>
+			</li>
+			<li>
+				<a href="shop-cart.html">
+					<div class="number">0</div>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart"></use>
+				</svg>
+				购物车
+				</a>
+			</li>
+			<li>
+				<a href="person-center.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-person"></use>
+				</svg>
+				个人中心
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var $title=$("title").text();
+		switch($title){
+			case "首页":
+			changeIndex(0,"#icon-homea");
+			break;
+			case "商品详情":
+			changeIndex(1,"#icon-fenleia");
+			break;
+			case "购物车":
+			changeIndex(2,"#icon-shopcarta");
+			break;
+			case "个人中心":
+			changeIndex(3,"#icon-persona");
+			break;
+		}
+		function changeIndex(footIndex,changeAttr){
+			$(".foot li").eq(footIndex).addClass("active").siblings().removeClass("active")
+			$(".foot li").eq(footIndex).find("use").attr("xlink:href",changeAttr);
+			
+		}
+	</script>
+<!--footerend-->
+				<div class="choose-guige choose-guige2">
+			<div class="guige-wrap">
+			<div class="title-wrap">
+			<img src="img/b1.png" class="product"/>
+			<div class="title">【鲜果】砂糖橙 约1kg（散）</div>
+			<div class="price">￥36.00 <span>/kg</span></div>
+			<img src="img/close.png" alt="" class="close" onclick="hideChoosGuige()" />
+			</div>
+			<div class="detail"><span class="left">规格</span>
+				<div class="right">
+					<div class="div" onclick="switchTab(this)">500g</div>
+					<div class="div active" onclick="switchTab(this)">1kg</div>
+				</div>
+			</div>
+			<div class="detail">
+				<span class="left">数量</span>
+				<div class="add-cart">
+							<div class="add reduce" onclick="reduceNumber(this)">-</div>
+							<input type="text" class="number" value="1">
+							<div class="add" onclick="addNumber(this)">+</div>
+							</div>
+			</div>
+			<a class="confirm" href="javascript:hideChoosGuige();">确定</a>
+		</div>
+		</div>
+			  	<script src="lib/list.js" type="text/javascript" ></script>
+	</body>
+	
+</html>

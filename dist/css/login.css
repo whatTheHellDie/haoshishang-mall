@@ -1,0 +1,370 @@
+/*!
+ * default v0.0.1: A lightweight front-end boilerplate
+ * (c) 2017 
+ * MIT License
+ * https://github.com/whatTheHellDie/myDefault
+ */
+
+@charset "UTF-8";
+/* CSS Document */
+/* line 3, E:/jingli/haoshishang/src/sass/_reset.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 4, E:/jingli/haoshishang/src/sass/_reset.scss */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #333;
+}
+
+/* line 5, E:/jingli/haoshishang/src/sass/_reset.scss */
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, E:/jingli/haoshishang/src/sass/_reset.scss */
+img {
+  border: 0px;
+}
+
+/* line 7, E:/jingli/haoshishang/src/sass/_reset.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 15, E:/jingli/haoshishang/src/sass/_reset.scss */
+i {
+  display: block;
+}
+
+/* line 16, E:/jingli/haoshishang/src/sass/_reset.scss */
+.clearfix {
+  display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+/* line 18, E:/jingli/haoshishang/src/sass/_reset.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 19, E:/jingli/haoshishang/src/sass/_reset.scss */
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+/* line 21, E:/jingli/haoshishang/src/sass/_reset.scss */
+input {
+  outline: 0;
+  width: 100%;
+  border-style: none;
+  border-radius: .1rem;
+}
+
+/* line 22, E:/jingli/haoshishang/src/sass/_reset.scss */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* line 28, E:/jingli/haoshishang/src/sass/_reset.scss */
+.f-l {
+  float: left;
+}
+
+/* line 29, E:/jingli/haoshishang/src/sass/_reset.scss */
+.f-r {
+  float: right;
+}
+
+/* line 4, E:/jingli/haoshishang/src/sass/login.scss */
+body {
+  width: 100%;
+  min-height: 11.36rem;
+  position: relative;
+}
+
+/* line 10, E:/jingli/haoshishang/src/sass/login.scss */
+::-webkit-input-placeholder {
+  color: #ea5514;
+}
+
+/* line 14, E:/jingli/haoshishang/src/sass/login.scss */
+.logo {
+  width: 3.44rem;
+  height: 1.25rem;
+  margin: 0 auto .5rem;
+  padding-top: .68rem;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 24, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap {
+  position: relative;
+  margin-bottom: .36rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 29, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .icon {
+  position: absolute;
+  font-size: .32rem;
+  top: .16rem;
+  left: .74rem;
+}
+
+/* line 35, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .icon-user {
+  font-size: .52rem;
+  left: .64rem;
+}
+
+/* line 39, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .icon-user2 {
+  font-size: .46rem;
+  left: .66rem;
+}
+
+/* line 43, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap input {
+  border-bottom: 1px solid #ff532e;
+  height: .68rem;
+  vertical-align: top;
+  padding-left: .56rem;
+  width: 5.2rem;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  font-size: .24rem;
+  box-sizing: border-box;
+  color: #ea5514;
+  background: transparent;
+}
+
+/* line 57, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .get {
+  width: 1.4rem;
+  height: .4rem;
+  text-align: center;
+  line-height: .4rem;
+  background: #ea5514;
+  color: #fff;
+  font-size: .2rem;
+  position: absolute;
+  right: .6rem;
+  border-radius: 1rem;
+  top: .12rem;
+}
+
+/* line 69, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .get.active {
+  background: #757575;
+}
+
+/* line 73, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap .get2 {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.4);
+  color: #000;
+  border-radius: 0;
+  font-size: .28rem;
+}
+
+/* line 82, E:/jingli/haoshishang/src/sass/login.scss */
+.btn-login {
+  width: 5.2rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  box-sizing: content-box;
+  text-align: center;
+  background: #ea5514;
+  font-size: .27rem;
+  color: #fff;
+  text-indent: .24rem;
+  letter-spacing: .24rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 95, E:/jingli/haoshishang/src/sass/login.scss */
+.btn-login1 {
+  text-indent: 0;
+  letter-spacing: 0;
+}
+
+/* line 100, E:/jingli/haoshishang/src/sass/login.scss */
+.tip {
+  font-size: .24rem;
+  color: #000;
+  text-align: center;
+  margin: -.2rem 0 .2rem;
+  position: relative;
+  z-index: 2;
+  height: .31rem;
+}
+
+/* line 110, E:/jingli/haoshishang/src/sass/login.scss */
+.tar {
+  text-align: right;
+  font-size: .24rem;
+  width: 5.2rem;
+  margin: .3rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 119, E:/jingli/haoshishang/src/sass/login.scss */
+.btn-register {
+  width: 0.8rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  box-sizing: content-box;
+  text-align: center;
+  background: #ea5514;
+  font-size: .24rem;
+  color: #fff;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-right: .06rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 131, E:/jingli/haoshishang/src/sass/login.scss */
+.login-bottom {
+  width: 6.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 139, E:/jingli/haoshishang/src/sass/login.scss */
+.top-bar {
+  background: #ea5514;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: .88rem;
+  line-height: .88rem;
+  font-size: .32rem;
+  width: 100%;
+  margin-bottom: .8rem;
+}
+
+/* line 149, E:/jingli/haoshishang/src/sass/login.scss */
+.top-bar .icon-back {
+  font-size: .37rem;
+  position: absolute;
+  top: .26rem;
+  left: .4rem;
+}
+
+/* line 155, E:/jingli/haoshishang/src/sass/login.scss */
+.top-bar .icon-delete {
+  font-size: .38rem;
+  position: absolute;
+  right: .2rem;
+  top: .25rem;
+}
+
+/* line 162, E:/jingli/haoshishang/src/sass/login.scss */
+.choose-item {
+  margin: 0 .1rem 0 .1rem;
+  width: .22rem;
+  height: .22rem;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: -.02rem;
+  background: #bfb8b5;
+}
+
+/* line 171, E:/jingli/haoshishang/src/sass/login.scss */
+.choose-item.checked {
+  background: url(../img/chosen.png);
+  background-size: cover;
+}
+
+/* line 176, E:/jingli/haoshishang/src/sass/login.scss */
+.auto-login {
+  position: relative;
+  z-index: 2;
+  width: 5.2rem;
+  height: .6rem;
+  margin: 0 auto;
+  font-size: .22rem;
+  color: #ea5514;
+}
+
+/* line 184, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 {
+  margin-top: .66rem;
+}
+
+/* line 186, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 .icon {
+  top: -.36rem;
+}
+
+/* line 187, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 .register-title {
+  color: #666666;
+  position: absolute;
+  font-size: .24rem;
+  top: -.36rem;
+  left: 1.04rem;
+}
+
+/* line 192, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 input {
+  padding: 0;
+}
+
+/* line 193, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 .icon {
+  top: -.36rem;
+  left: .56rem;
+}
+
+/* line 197, E:/jingli/haoshishang/src/sass/login.scss */
+.login-wrap2 .icon-user {
+  left: .46rem;
+}
+
+/* line 201, E:/jingli/haoshishang/src/sass/login.scss */
+.tar {
+  padding-bottom: .3rem;
+}
+
+/* line 202, E:/jingli/haoshishang/src/sass/login.scss */
+.login-bottom2 {
+  opacity: 0.5;
+}
+
+/* line 203, E:/jingli/haoshishang/src/sass/login.scss */
+.wanshang {
+  display: block;
+  width: 1.98rem;
+  height: .29rem;
+  margin: .3rem auto .86rem;
+}

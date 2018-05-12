@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top-bar">
+					<svg class="icon icon-back" aria-hidden="true" onclick="window.history.back(1)">
+				  <use xlink:href="#icon-back"></use>
+				</svg>
+					充值
+				</div>
+				<style type="text/css">
+					.charge-way{background: #eee;height: 1rem;}
+					.charge-way .title{     font-size: .22rem;
+    display: inline-block;
+    line-height: 1rem;
+    margin: 0 .6rem 0 .2rem;
+    float: left;
+    color: #333;}
+					.charge-way ul{
+						    max-width: 9999px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 4.6rem;
+    font-size: 0;
+    float: right;
+					}
+					.charge-way li{       height: .5rem;
+    line-height: .5rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 1.58rem;
+    text-align: center;
+    border: 2px solid #a7a7a7;
+    margin: .23rem .2rem 0 0;
+    font-size: .24rem;
+    color: #4a4a4a;border-radius: .05rem;}
+    .charge-way li.active{
+    	border-color: #ea5514;
+    }
+    .choose-yuan {    
+    	padding: 0 0 0 .2rem;
+    	font-size: 0;
+}
+    .choose-yuan li{
+        text-align: center;
+    height: .5rem;
+    line-height: .5rem;
+    border: 2px solid #8d8d8d;
+    margin: .23rem .2rem 0 0;
+    font-size: .24rem;
+    color: #4a4a4a;
+    border-radius: .05rem;
+    width: 1.82rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.choose-yuan li.active{border-color: #EA5514;}
+.pay-title{    padding: .3rem .2rem 0;max-height: 9999px;}
+.pay-title.active{color: #EA5514;}
+.pay-way li {
+    height: .7rem;
+    padding: .3rem .1rem 0;
+}
+.save3{margin: .6rem auto 0;}
+.charge-banner{font-size: .24rem;color: #ea5514;max-height: 9999px;margin: .2rem .3rem;line-height: 1.5;}
+.charge-banner li{margin-bottom: .1rem;}
+.charge-banner dd{padding-left: .34rem;line-height: 1.8;}
+				</style>
+				<div class="charge-way clearfix">
+					<div class="title">充值方式</div>
+					<ul>
+						<li class="active" onclick="switchTab(this)">网上充值</li>
+						<li onclick="switchTab(this)">充值卡</li>
+					</ul>
+				</div>
+				<ul class="choose-yuan">
+					<li class="active" onclick="switchTab(this)">100元</li>
+					<li onclick="switchTab(this)">200元</li>
+					<li onclick="switchTab(this)">200元</li>
+					<li onclick="switchTab(this)">200元</li>
+					<li onclick="switchTab(this)">200元</li>
+				</ul>
+				<div class="pay-title">支付方式：</div>
+				<div class="pay-way">
+				<ul>
+					<li onclick="switchTab(this)">
+						<div class="choose-item" onclick="checked(this)"></div>
+						<img src="img/weixin.png">
+						<div class="name">
+							<div class="title">微信支付</div>
+							<div class="content">使用微信支付</div>
+						</div>
+					</li>
+					<li onclick="switchTab(this)">
+						<div class="choose-item" onclick="checked(this)"></div>
+						<img src="img/alipay.png">
+						<div class="name">
+							<div class="title">支付宝支付</div>
+							<div class="content">使用支付宝支付</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="save save2 save3" >充值</div>
+				<div class="pay-title active">储值与优惠：</div>
+				<div class="charge-banner">
+					<ul>
+						<li>1、储值选项：100/500/1000/3000/5000五中储值金额</li>
+						<li>2、储值优惠：</li>
+						<dl>
+							<dd>a) 储值100获得110消费金额（送10个积分）</dd>
+							<dd>b) 储值500获得600消费金额（送100个积分）</dd>
+							<dd>c) 储值1000获得1300消费金额（送300个积分）</dd>
+							<dd>d) 储值3000获得4200消费金额（送1200个积分/每月600连续送2个月）</dd>
+							<dd>e) 储值5000获得7400消费金额（送2400个积分/每月600连续送4个月）</dd>
+						</dl>
+					</ul>
+				</div>
+		</div>
+				<script type="text/javascript">
+					function checked(obj){
+	$(obj).addClass("checked").parent().siblings("li").children(".choose-item").removeClass("checked");
+}
+					function switchTab(obj){
+						$(obj).addClass("active").siblings().removeClass("active")
+					}
+				</script>
+	</body>
+	
+</html>
