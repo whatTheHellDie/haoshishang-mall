@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="" content=""/>
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script src="lib/reset.js" type="text/javascript"></script>
+		<script src="lib/iconfont.js"></script>
+	</head>
+	<body>
+		<div class="wrap wrap2">
+			<div class="top-bar">
+					<svg class="icon icon-back" aria-hidden="true" onclick="window.history.back(1)">
+				  <use xlink:href="#icon-back"></use>
+				</svg>
+					购物车
+					<svg class="icon icon-delete" aria-hidden="true">
+				  <use xlink:href="#icon-delete"></use>
+				</svg>
+				</div>
+			<div class="item_list item_list2 item_list3 item_list4">
+				
+				<ul class="clearfix">
+					<li class="clearfix">
+						<div class="choose-item" onclick="checked(this)"></div>
+						<a href="#">
+							<img src="img/hongbao.png" class="hongbao-add" style="top: .12rem;left: .16rem;    transform: scale(.8);"/>
+						<img src="img/b1.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+							<div class="fen1">/份</div>
+						</div>
+						</a>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<div class="add-cart">
+							<div class="add reduce" onclick="reduceNumber(this)">-</div>
+							<input type="text" class="number"  value="1" />
+							<div class="add add1" onclick="addNumber(this)">+</div>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="choose-item" onclick="checked(this)"></div>
+						<a href="#">
+						<img src="img/b1.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+							<div class="fen1">/份</div>
+						</div>
+						</a>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<div class="add-cart">
+							<div class="add reduce" onclick="reduceNumber(this)">-</div>
+							<input type="text" class="number"  value="1" />
+							<div class="add add1" onclick="addNumber(this)">+</div>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="choose-item" onclick="checked(this)"></div>
+						<a href="#">
+						<img src="img/b1.png" class="product" alt="">
+						<div class="content">
+							<div class="title">卷心菜</div>
+							<div class="introduce">来自西伯利亚平原的卷心菜含有稀有的铁利息...</div>
+							<div class="fen1">/份</div>
+						</div>
+						</a>
+						<div class="buy-wrap">
+							<div class="price clearfix">
+								<span><span>￥</span>36.00<span class="kg">/kg</span></span>
+							</div>
+							<div class="add-cart">
+							<div class="add reduce" onclick="reduceNumber(this)">-</div>
+							<input type="text" class="number"  value="1" />
+							<div class="add add1" onclick="addNumber(this)">+</div>
+							</div>
+						</div>
+					</li>
+					<div class="noData-wrap">
+						<img src="img/noData2.png" class="noData noData2"/>
+						<a href="index.html" class="see-other">主人快去给我找点儿东西吧</a>
+					</div>
+				</ul>
+			</div>
+				</div>
+				<div class="to-checkout">
+					<div class="choose-item-wrap">
+					<div class="choose-item" onclick="checkedAll(this)"></div>全选
+					</div>
+					<div class="total-price">
+						<div class="compute">合计：<span class="highlight">￥3654.00</span></div>
+						<div class="compute">运费：<span class="highlight">￥5.00</span></div>
+					</div>
+					<a class="btn-checkout" href="confirm-order.html">结算</a>
+				</div>
+				</div>
+				
+				<!--footer--><!--footerend-->
+			  	<script src="lib/shop-cart.js" type="text/javascript" ></script>
+	</body>
+	
+</html>

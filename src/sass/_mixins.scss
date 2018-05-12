@@ -1,0 +1,56 @@
+//
+//  MIXINS & FUNCTIONS
+//  A few simple Sass helpers.
+//
+
+// @font-face mixin
+// Order of the includes matters, and it is: normal, bold, italic, bold+italic.
+// Forked from Bourbon. https://github.com/thoughtbot/bourbon/
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+             url('#{$file-path}.woff') format('woff'),
+             url('#{$file-path}.ttf') format('truetype'),
+             url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+}
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin text-overflow2($number:2){
+    overflow: hidden;
+  text-overflow: ellipsis;
+        white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+}
+@mixin btn($width,$height){
+     width: $width;
+    height: $height;
+    line-height: $height;
+    box-sizing: content-box;
+    text-align: center;
+}
+@mixin button($width,$height,$border:#ccc){
+    width: $width;
+    height: $height;
+    line-height: $height;
+    box-sizing: content-box;
+    text-align: center;
+    border:1px solid $border;
+}
+@mixin absolute($top:0,$right:0,$bottom:0,$left:0){
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

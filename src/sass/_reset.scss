@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;    font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);color: #333;}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+i{display: block;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+input{outline: 0;width: 100%;border-style: none;border-radius:.1rem;}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.f-l{float: left;}
+.f-r{float: right;}

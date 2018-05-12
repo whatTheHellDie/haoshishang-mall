@@ -1,0 +1,206 @@
+@import "reset";
+@import "config";
+@import "mixins";
+body {
+    width: 100%;
+    min-height: 11.36rem;
+    position: relative;
+}
+
+::-webkit-input-placeholder {
+    color: $c;
+}
+
+.logo {
+    width: 3.44rem;
+    height: 1.25rem;
+    margin: 0 auto .5rem;
+    padding-top: .68rem;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.login-wrap {
+    position: relative;
+    margin-bottom: .36rem;
+    position: relative;
+    z-index: 2;
+    .icon {
+        position: absolute;
+        font-size: .32rem;
+        top: .16rem;
+        left: .74rem;
+    }
+    .icon-user {
+        font-size: .52rem;
+        left: .64rem;
+    }
+    .icon-user2 {
+        font-size: .46rem;
+        left: .66rem;
+    }
+    input {
+        border-bottom: 1px solid #ff532e;
+        height: .68rem;
+        vertical-align: top;
+        padding-left: .56rem;
+        width: 5.2rem;
+        border-radius: 0;
+        display: block;
+        margin: 0 auto;
+        font-size: .24rem;
+        box-sizing: border-box;
+        color: $c;
+        background: transparent;
+    }
+    .get {
+        width: 1.4rem;
+        height: .4rem;
+        text-align: center;
+        line-height: .4rem;
+        background: $c;
+        color: #fff;
+        font-size: .2rem;
+        position: absolute;
+        right: .6rem;
+        border-radius: 1rem;
+        top: .12rem;
+        &.active {
+            background: #757575;
+        }
+    }
+    .get2 {
+        background: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.4);
+        color: #000;
+        border-radius: 0;
+        font-size: .28rem;
+    }
+}
+
+.btn-login {
+    @include btn(5.2rem, .6rem);
+    background: $c;
+    font-size: .27rem;
+    color: #fff;
+    text-indent: .24rem;
+    letter-spacing: .24rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-login1 {
+    text-indent: 0;
+    letter-spacing: 0;
+}
+
+.tip {
+    font-size: .24rem;
+    color: #000;
+    text-align: center;
+    margin: -.2rem 0 .2rem;
+    position: relative;
+    z-index: 2;
+    height: .31rem;
+}
+
+.tar {
+    text-align: right;
+    font-size: .24rem;
+    width: 5.2rem;
+    margin: .3rem auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-register {
+    @include btn(.8rem, .4rem);
+    background: $c;
+    font-size: .24rem;
+    color: #fff;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-right: .06rem;
+    position: relative;
+    z-index: 2;
+}
+
+.login-bottom {
+    width: 6.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.top-bar {
+    background: $c;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .32rem;
+    width: 100%;
+    margin-bottom: .8rem;
+    .icon-back {
+        font-size: .37rem;
+        position: absolute;
+        top: .26rem;
+        left: .4rem;
+    }
+    .icon-delete {
+        font-size: .38rem;
+        position: absolute;
+        right: .2rem;
+        top: .25rem;
+    }
+}
+.choose-item {
+           margin: 0 .1rem 0 .1rem;
+    width: .22rem;
+    height: .22rem;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: -.02rem;
+        background: #bfb8b5;
+        
+        &.checked {
+            background: url(../img/chosen.png);
+            background-size: cover;
+        }
+    }
+    .auto-login{
+        position: relative;
+    z-index: 2;
+    width: 5.2rem;
+    height: .6rem;
+    margin: 0 auto;
+    font-size: .22rem;color: $c;
+    }
+.login-wrap2{
+    margin-top: .66rem;
+       .icon{ top: -.36rem;}
+       .register-title{    color: #666666;
+    position: absolute;
+    font-size: .24rem;
+    top: -.36rem;
+    left: 1.04rem;}
+    input{    padding: 0;}
+    .icon{
+            top: -.36rem;
+                left: .56rem;
+    }
+    .icon-user{
+         left: .46rem;
+    }
+}
+.tar{padding-bottom: .3rem;}
+.login-bottom2{opacity: 0.5;}
+.wanshang{    display: block;
+    width: 1.98rem;
+    height: .29rem;
+    margin: .3rem auto .86rem;}

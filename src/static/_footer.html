@@ -1,0 +1,59 @@
+<div class="foot">
+		<ul class="clearfix">
+			<li>
+				<a href="index.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-home"></use>
+				</svg>
+				首页
+				</a>
+			</li>
+			<li>
+				<a href="list.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-fenlei"></use>
+				</svg>
+				分类
+				</a>
+			</li>
+			<li>
+				<a href="shop-cart.html">
+					<div class="number">0</div>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shopcart"></use>
+				</svg>
+				购物车
+				</a>
+			</li>
+			<li>
+				<a href="person-center.html">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-person"></use>
+				</svg>
+				个人中心
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var $title=$("title").text();
+		switch($title){
+			case "首页":
+			changeIndex(0,"#icon-homea");
+			break;
+			case "商品详情":
+			changeIndex(1,"#icon-fenleia");
+			break;
+			case "购物车":
+			changeIndex(2,"#icon-shopcarta");
+			break;
+			case "个人中心":
+			changeIndex(3,"#icon-persona");
+			break;
+		}
+		function changeIndex(footIndex,changeAttr){
+			$(".foot li").eq(footIndex).addClass("active").siblings().removeClass("active")
+			$(".foot li").eq(footIndex).find("use").attr("xlink:href",changeAttr);
+			
+		}
+	</script>
